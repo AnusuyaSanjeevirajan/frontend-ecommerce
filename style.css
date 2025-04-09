@@ -1,0 +1,227 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: #f4f4f4;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #1c1c1c;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 40px;
+    border-radius: 50%;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-links li a:hover {
+    color: #ff4a57;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background: url('back.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    z-index: 2;
+    padding: 2rem;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ff4a57;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-features {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .badge {
+    background-color: #ff4a57;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .btn-shop {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #fff;
+    color: #111;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-shop:hover {
+    background-color: #ff4a57;
+    color: #fff;
+  }
+  
+  /* Feature Section */
+  .features {
+    background-color: #1b1b1b;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .features h2 {
+    color: #ff4a57;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .feature {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 250px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature img {
+    width: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .feature h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature p {
+    color: #ccc;
+    font-size: 0.95rem;
+  }
+  .features {
+    padding: 4rem 2rem;
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffdd57;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+  
+  .feature {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 221, 87, 0.1);
+  }
+  
+  .feature:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 221, 87, 0.2);
+  }
+  
+  .feature img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .feature h3 {
+    font-size: 1.2rem;
+    color: #ffdd57;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature p {
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  .footer {
+    text-align: center;
+    color: green;
+    padding: 20px;
+    background-color: #38e70c; /* optional: makes it look nice on dark theme */
+    font-size: 16px;
+  }
+  
+  

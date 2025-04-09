@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | Ansi T-Shirts</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header"> 
+    <div class="logo">
+      <img src="logo.jpg" alt="Ansi Logo">
+      <h1>Ansi</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="cart.html" class="active">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cart Section -->
+  <section class="cart">
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-summary">
+      <p>Total: ₹<span id="total-price">0</span></p>
+
+      <div class="payment-options">
+        <h3>Select Payment Method:</h3>
+        <label><input type="radio" name="payment" value="UPI" checked> UPI</label>
+        <label><input type="radio" name="payment" value="COD"> Cash on Delivery</label>
+        <label><input type="radio" name="payment" value="Card"> Credit/Debit Card</label>
+      </div>
+      <!-- Delivery Address -->
+      <div class="delivery-info">
+        <h3>Delivery Information</h3>
+        <input type="text" id="address" placeholder="Enter delivery address" required><br>
+        <input type="text" id="contact" placeholder="Enter contact number" required>
+      </div>
+      
+      <div id="order-status" style="display: none; margin-top: 20px;"></div>
+      
+<div class="delivery-address">
+    <h3>Delivery Address</h3>
+    <textarea id="address" placeholder="Enter your full delivery address..." rows="4" required></textarea>
+  </div>
+  
+  <!-- Order Status (Display only after checkout) -->
+  <div id="order-status" class="order-status" style="display: none;">
+    <h3>Order Status</h3>
+    <p>Status: <strong>Confirmed</strong></p>
+    <p>Estimated Delivery: <strong>3-5 business days</strong></p>
+  </div>
+  
+      
+
+      <div class="cart-buttons">
+        <button id="checkout-btn">Proceed to Checkout</button>
+        <button id="clear-cart-btn" class="clear">Clear Cart</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Ansi T-Shirts. Designed with ❤️ by You</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="cart.js"></script>
+</body>
+</html>

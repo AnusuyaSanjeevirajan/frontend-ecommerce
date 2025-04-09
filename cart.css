@@ -1,0 +1,154 @@
+.cart {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .cart-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  }
+  
+  .cart-item img {
+    width: 80px;
+    border-radius: 10px;
+  }
+  
+  .cart-summary {
+    margin-top: 2rem;
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  .cart-summary p {
+    font-size: 1.2rem;
+  }
+  
+  .payment-options {
+    margin: 1rem 0;
+  }
+  
+  .payment-options label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  button {
+    padding: 0.6rem 1.2rem;
+    margin-top: 0.5rem;
+    background-color: #00aaff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  button.clear {
+    background-color: crimson;
+  }
+  .cart-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .cart-item img {
+    width: 100px;
+    border-radius: 8px;
+  }
+  
+  .cart-details {
+    flex: 1;
+  }
+  
+  .payment-methods {
+    margin: 20px 0;
+  }
+  
+  #total-price {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .footer {
+    text-align: center;
+    color: green;
+    padding: 20px;
+    background-color: #38e70c; /* optional: makes it look nice on dark theme */
+    font-size: 16px;
+  }
+  .delivery-address textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .order-status {
+    background-color: #e7ffe7;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid green;
+    border-radius: 10px;
+  }
+  /* Delivery Information Section */
+.delivery-info {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 10px;
+  }
+  
+  .delivery-info h3 {
+    color: #00ff99;
+    margin-bottom: 10px;
+  }
+  
+  .delivery-info input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #2b2b2b;
+    color: #fff;
+  }
+  
+  /* Order Status Box */
+  #order-status {
+    background-color: #002b20;
+    border: 1px solid #00ff99;
+    color: #00ff99;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  /* Simple fade animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  
+  
